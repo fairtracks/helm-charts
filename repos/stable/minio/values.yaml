@@ -1,5 +1,5 @@
 ingress:
-  host: "local-chart.example.com"
+  host: "minio-test2.fairtracks.sigma2.no"
 resources:
   requests:
     cpu: "2"
@@ -8,12 +8,12 @@ resources:
     cpu: "4"
     memory: 2G
 persistentStorage:
-  existingClaim: ""
-  existingClaimName: "example-name"
+  existingClaim: "8fbdd1bd-31a5-4ffd-a5b0-eaf10e519732"
+  existingClaimName: "fairtracks-ns10022k"
   subPath: "/"
   readOnly: false
-uid: 999
-gid: 999
+uid: 240795
+gid: 205709
 username: minio
 supplementalGroups:
   - name: ""
@@ -43,5 +43,5 @@ appstore_generated_data:
     auth_url: provided-by-toolkit
 advanced:
   accessKey: "accesskeyexample"
-  secretKey: "secretkeyexample"
-  dockerImage: quay.io/uninett/minio:20210215-96996ea
+  secretKey: "Pzr9YPNe*daAan"
+  dockerImage: quay.io/uninett/minio:20210915-90f987b
